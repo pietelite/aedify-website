@@ -652,6 +652,18 @@ section {
   border-color: #2282ff;
 }
 
+.services .icon-box-purple .icon {
+  background: #CCCCFF;
+}
+
+.services .icon-box-purple .icon i {
+  color: #7700FF;
+}
+
+.services .icon-box-purple:hover {
+  border-color: #CCCCFF;
+}
+
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
