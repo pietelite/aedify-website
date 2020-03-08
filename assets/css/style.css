@@ -109,6 +109,47 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: width 400ms;
 }
 
+#vt-root .bar-loader--top.run, #vt-root.app-fetching .gs-header .bar-loader--top.bar-loader {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.79, 0.25, 0.74, 0.44);
+          animation-timing-function: cubic-bezier(0.79, 0.25, 0.74, 0.44);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: scaleX-top-loader;
+          animation-name: scaleX-top-loader;
+}
+
+#vt-root .gs-header .inner-container__root {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  #vt-root .gs-header .f-row.top-row {
+  height: 96px;
+  }
+}
+
+#vt-root .gs-header .f-col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: auto;
+}
+
+#vt-root .gs-header .f-row.top-row .f-col:nth-of-type(3) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+  #vt-root .gs-header .gs-header-logo {
+  width: 64px;
+  }
+}
+
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
