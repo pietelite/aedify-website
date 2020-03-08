@@ -1,0 +1,203 @@
+.intro-icon-5plus {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+}
+@media all and (min-width: 992px) {
+    .intro-icon-5plus {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+                align-content: center;
+    }
+}
+.intro-icon-5plus p {
+    font-family: 'Univers LT W01 55 Roman';
+    line-height: 1.3125rem;
+    color: #434343;
+    font-size: .875rem;
+    margin: 0;
+}
+@media all and (min-width: 768px) {
+    .intro-icon-5plus p {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+}
+.intro-icon-5plus h5 {
+    font-family: 'UniversLTW01-65Bold', sans-serif;
+    font-size: 1.125rem;
+    color: #171717;
+    margin: 0 0 1.25rem 0;
+    line-height: 1.375rem;
+}
+@media all and (min-width: 768px) {
+    .intro-icon-5plus h5 {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    }
+}
+
+.intro-icon-5plus__slide {
+    height: 3.75rem;
+    width: 100%;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+            align-self: center;
+    overflow: hidden;
+    border-top: solid 1px #E1E1E1;
+    text-align: center;
+    -webkit-transition: .8s height cubic-bezier(.51, 0, .12, 1);
+            transition: .8s height cubic-bezier(.51, 0, .12, 1);
+    position: relative;
+    cursor: pointer;
+}
+.intro-icon-5plus__slide:first-of-type {
+    border-top: 0;
+}
+.intro-icon-5plus__slide img, .intro-icon-5plus__slide p {
+    opacity: 0;
+    -webkit-transition: opacity .8s cubic-bezier(.51, 0, .12, 1);
+            transition: opacity .8s cubic-bezier(.51, 0, .12, 1);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+}
+.intro-icon-5plus__slide img {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+.intro-icon-5plus__slide.active p {
+    opacity: 1;
+    -webkit-transition-delay: .3s;
+            transition-delay: .3s;
+}
+.intro-icon-5plus__slide.active img {
+    opacity: 1;
+    -webkit-transition-delay: .3s;
+            transition-delay: .3s;
+}
+@media all and (min-width: 992px) {
+    .intro-icon-5plus__slide {
+        height: auto;
+        border-top: 0;
+        border-left: solid 1px #E1E1E1;
+        width: 6.75rem;
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+                align-self: stretch;
+        -webkit-transition: .5s width;
+                transition: .5s width;
+        margin-bottom: 2rem;
+    }
+    .intro-icon-5plus__slide:first-of-type {
+        border-left: 0;
+        border-top: 0;
+    }
+    .intro-icon-5plus__slide:last-of-type {
+        border-bottom: 0;
+    }
+    .intro-icon-5plus__slide.active {
+        width: 20.625rem;
+    }
+}
+@media all and (min-width: 1200px) {
+    .intro-icon-5plus__slide {
+        width: 8.75rem;
+    }
+}
+
+.intro-icon-5plus__content-wrapper {
+    position: absolute;
+    padding: 0 1.875rem 1.875rem 1.875rem;
+    -webkit-transition: .8s top cubic-bezier(.51, 0, .12, 1), .8s margin-left cubic-bezier(.51, 0, .12, 1), .8s -webkit-transform cubic-bezier(.51, 0, .12, 1);
+            transition: .8s top cubic-bezier(.51, 0, .12, 1), .8s margin-left cubic-bezier(.51, 0, .12, 1), .8s -webkit-transform cubic-bezier(.51, 0, .12, 1);
+            transition: .8s top cubic-bezier(.51, 0, .12, 1), .8s transform cubic-bezier(.51, 0, .12, 1), .8s margin-left cubic-bezier(.51, 0, .12, 1);
+            transition: .8s top cubic-bezier(.51, 0, .12, 1), .8s transform cubic-bezier(.51, 0, .12, 1), .8s margin-left cubic-bezier(.51, 0, .12, 1), .8s -webkit-transform cubic-bezier(.51, 0, .12, 1);
+    width: 100%;
+}
+@media all and (min-width: 768px) {
+    .intro-icon-5plus__content-wrapper p {
+        text-align: left;
+    }
+}
+@media all and (min-width: 992px) {
+    .intro-icon-5plus__content-wrapper {
+        padding: 1.875rem;
+        position: static;
+        width: 18.75rem;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: 50%;
+        -webkit-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+    }
+}
+@media all and (min-width: 1200px) {
+    .intro-icon-5plus__content-wrapper {
+        width: 18.125rem;
+    }
+}
+
+.intro-icon-5plus__no-image,
+.intro-icon-5plus__image {
+    margin-bottom: 1.25rem;
+}
+
+@media all and (min-width: 992px) {
+    .intro-icon-5plus__no-image {
+        margin-bottom: 0;
+    }
+    .intro-icon-5plus__slide div.intro-icon-5plus__image {
+        width: 6.25rem;
+        height: calc(6.25rem + 2px);
+    }
+}
+
+.intro-icon-5plus__slide .intro-icon-5plus__cta-block {
+    margin-top: 0.625rem;
+}
+.intro-icon-5plus__slide .intro-icon-5plus__cta {
+    color: #22A2FF;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    font-family: 'UniversLTW01-65Bold', sans-serif;
+    font-size: .625rem;
+    -webkit-transition: color .5s, background .5s, border-color .5s;
+    transition: color .5s, background .5s, border-color .5s;
+    text-decoration: none;
+    text-decoration: none;
+}
+@media all and (min-width: 768px) {
+    .intro-icon-5plus__slide .intro-icon-5plus__cta {
+        font-size: .6875rem;
+    }
+}
+@media (any-hover: none) {
+    .intro-icon-5plus__slide .intro-icon-5plus__cta {
+        color: #22A2FF;
+    }
+}
+.intro-icon-5plus__slide .intro-icon-5plus__cta:hover {
+    color: #316BB6;
+}
