@@ -88,6 +88,27 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   text-transform: uppercase;
 }
 
+#vt-root .gs-header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  overflow: visible;
+  -webkit-transition: all 400ms, box-shadow 0ms;
+  transition: all 400ms, box-shadow 0ms;
+}
+
+#vt-root .gs-header .gs-header-logo {
+  display: block;
+  width: 52px;
+  -webkit-transition: width 400ms;
+  transition: width 400ms;
+}
+
 #header .logo h1 a, #header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
